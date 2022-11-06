@@ -71,6 +71,7 @@ Config = {
 			{ name = "firework3", price = 50, amount = 50, },
 			{ name = "firework4", price = 50, amount = 50, },
 			{ name = "fitbit", price = 400, amount = 150, },
+			{ name = "finescale", price = 400, amount = 150, },
 			{ name = "cleaningkit", price = 150, amount = 150, },
 			{ name = "advancedrepairkit", price = 500, amount = 50,  requiredJob = { ["mechanic"] = 0 } },
 		},
