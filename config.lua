@@ -11,7 +11,7 @@ Config = {
 	Peds = true, -- Set to true if you want Shops to have Peds
 	Limit = true, -- Enable this to add Stash features, This adds limits to items and gets refilled at each restart
 	MaxSlots = 41, -- Set this to your player inventory slot count, this is default "41"
-	BlackMarket = false, -- enable to add blackmarket locations (defined at the bottom of this file)
+	BlackMarket = true, -- enable to add blackmarket locations (defined at the bottom of this file)
 	Measurement = "kg", -- Custom Weight measurement
 	Gabz247 = false,  -- Enable if using gabz 247 stores
 	GabzAmmu = false, -- Enable if using gabz Ammunation stores
@@ -107,12 +107,9 @@ Config = {
 		["casino"] = {
 			{ name = 'casinochips', price = 1, amount = 999999 },
 		},
-		["electronics"] = {
-			{ name = "phone", price = 850, amount = 50 },
-			{ name = "radio", price = 250, amount = 50, },
-			{ name = "screwdriverset", price = 350, amount = 50, },
-			{ name = "binoculars", price = 50, amount = 50, },
-			{ name = "fitbit", price = 400, amount = 150, },
+		["blackmarket"] = {
+			{ name = "finescale", price = 280, amount = 50 },
+			{ name = "trimming_scissors", price = 175, amount = 50, },
 		},
 		["vending"] = {
 			{ name = "cocacola", price = 100, amount = 7, },
@@ -403,13 +400,13 @@ Config.Locations = {
 		},
 		["logo"] = "https://static.wikia.nocookie.net/gtawiki/images/b/b5/DigitalDen-GTAV-Logo.png",
 		["coords"] = {
-			vector4(391.76, -832.79, 29.29, 223.77),
+			vector4(-1596.97, -422.22, 19.75, 268.6),
 			vector4(1136.99, -473.13, 66.53, 254.85),
 			vector4(-509.55, 278.63, 83.31, 176.65),
 			vector4(-656.27, -854.73, 24.5, 359.39),
 			vector4(-1088.29, -254.3, 37.76, 252.7),
 			},
-		["products"] = Config.Products["electronics"],
+		["products"] = Config.Products["blackmarket"],
 	},
 	["lostmc"] = { -- More of a test/example - Gang accessible stores
 		["label"] = "Lost MC",
