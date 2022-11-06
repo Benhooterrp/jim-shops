@@ -74,25 +74,8 @@ Config = {
 			{ name = "cleaningkit", price = 150, amount = 150, },
 			{ name = "advancedrepairkit", price = 500, amount = 50,  requiredJob = { ["mechanic"] = 0 } },
 		},
-		["weedshop"] = {
-			{ name = "rolling_paper", price = 12, amount = 1000, },
-			{ name = "cubancigar", price = 63, amount = 100, },
-			{ name = "davidoffcigar", price = 75, amount = 100, },
-			{ name = "vape", price = 1250, amount = 20, },
-			{ name = "liquid", price = 26, amount = 124, },
-			{ name = "medical_license", price = 8500, amount = 10, },
-			{ name = "gelatti", price = 115, amount = 1000, },
-			{ name = "gary_payton", price = 14, amount = 1000, },
-			{ name = "cereal_milk", price = 27, amount = 1000, },
-			{ name = "cheetah_piss", price = 22, amount = 1000, },
-			{ name = "snow_man", price = 64, amount = 1000, },
-			{ name = "georgia_pie", price = 33, amount = 1000, },
-			{ name = "jefe", price = 24, amount = 1000, },
-			{ name = "cake_mix", price = 123, amount = 1000, },
-			{ name = "white_runtz", price = 84, amount = 1000, },
-			{ name = "grabba_leaf", price = 90, amount = 1000, },
-			{ name = "whitecherry_gelato", price = 180, amount = 1000, },
-			{ name = "blueberry_cruffin", price = 250, amount = 1000, },
+		["beachshop"] = {
+			{ name = "metaldetector", price = 64, amount = 1000, },
 		},
 		["gearshop"] = {
 			{ name = "diving_gear", price = 2500, amount = 10, },
@@ -331,8 +314,8 @@ Config.Locations = {
 	},
 
     -- Weedshop Locations
-    ["weedshop"] = {
-		["label"] = "Cookies",
+    ["beachshop"] = {
+		["label"] = "Beachshop",
 		["type"] = "items",
 		["model"] = {
 			`mp_f_weed_01`,
@@ -341,8 +324,10 @@ Config.Locations = {
 			`A_F_Y_RurMeth_01`,
 			`a_m_y_hippy_01`,
 		},
-		["coords"] = { vector4(-146.18, -591.31, 192.32, 30.06), },
-		["products"] = Config.Products["weedshop"],
+		["coords"] = { vector4(-1305.19, -1364.27, 4.52, 116.13), },
+		["products"] = Config.Products["beachshop"],
+		["blipsprite"] = 197,
+		["blipcolour"] = 7,
 	},
 
     -- Bean Coffee Locations
