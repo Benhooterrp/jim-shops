@@ -58,22 +58,13 @@ Config = {
 		},
 		["hardware"] = {
 			{ name = "lockpick", price = 200, amount = 50, },
-			{ name = "weapon_wrench", price = 250, amount = 250, },
-			{ name = "weapon_hammer", price = 250, amount = 250, },
-			{ name = "weapon_bat", price = 500, amount = 50,  requiredGang = { "lostmc" } },  -- Gang only options in stores
-			{ name = "repairkit", price = 250, amount = 50,  requiredJob = { ["mechanic"] = 0, ["police"] = 0 } },
 			{ name = "screwdriverset", price = 350, amount = 50, },
-			{ name = "phone", price = 850, amount = 50, },
+			{ name = "goldpan", price = 85, amount = 50, },
 			{ name = "radio", price = 250, amount = 50, },
 			{ name = "binoculars", price = 50, amount = 50, },
-			{ name = "firework1", price = 50, amount = 50, },
-			{ name = "firework2", price = 50, amount = 50, },
-			{ name = "firework3", price = 50, amount = 50, },
-			{ name = "firework4", price = 50, amount = 50, },
 			{ name = "fitbit", price = 400, amount = 150, },
 			{ name = "finescale", price = 400, amount = 150, },
 			{ name = "cleaningkit", price = 150, amount = 150, },
-			{ name = "advancedrepairkit", price = 500, amount = 50,  requiredJob = { ["mechanic"] = 0 } },
 		},
 		["beachshop"] = {
 			{ name = "metaldetector", price = 64, amount = 1000, },
@@ -257,6 +248,29 @@ Config.Locations = {
 		},
         ["products"] = Config.Products["bar"],
     },
+
+	   -- Hardware Store Locations
+	   ["liq"] = {
+        ["label"] = "Amazon Depot",
+		["type"] = "items",
+		["model"] = {
+			`s_m_m_autoshop_02`,
+			`S_F_M_Autoshop_01`,
+			`S_M_M_AutoShop_01`,
+			`S_M_M_Autoshop_03`,
+			`IG_Benny`,
+			`IG_Benny_02`,
+			`MP_F_BennyMech_01`,
+		},
+		["coords"] = {
+			vector4(-421.36, 6136.77, 31.88, 211.52),
+		},
+        ["products"] = Config.Products["hardware"],
+		["hideblip"] = false,
+		["blipsprite"] = 643,
+		["blipcolour"] = 5,
+    },
+
 	-- Ammunation VANILLA Locations
     ["ammunation"] = {
         ["label"] = "Skye Liqour and guns",
@@ -342,18 +356,18 @@ Config.Locations = {
 		["products"] = Config.Products["coffeeplace"],
     },
 
-    -- Sea Word Locations
-    ["seaworld"] = {
-		["label"] = "Sea World",
+    -- gun dealer
+    ["gun"] = {
+		["label"] = "Gun Dealer",
 		["type"] = "items",
 		["model"] = {
 			`mp_m_boatstaff_01`,
 			`a_m_y_beach_01`,
 		},
-		["coords"] = { vector4(-1686.48, -1072.53, 13.15, 49.85), },
+		["coords"] = { vector4(-53.54, -2524.96, 7.4, 31.49), },
 		["products"] = Config.Products["gearshop"],
-		["blipsprite"] = 52,
-		["blipcolour"] = 3,
+		["blipsprite"] = 102,
+		["blipcolour"] = 38,
 	},
 
     -- Leisure Shop Locations
