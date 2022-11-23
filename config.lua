@@ -382,6 +382,7 @@ Config.Locations = {
 		["products"] = Config.Products["leisureshop"],
 		["blipsprite"] = 52,
 		["blipcolour"] = 2,
+		["hideblip"] = true,
     },
 
     -- Local Store Locations
